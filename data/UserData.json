@@ -1,0 +1,17 @@
+[
+{
+ 	"firstname" : "Moataz",
+ 	"lastname" : "Nabil" ,
+	"day" : "5",
+ 	"email" : "moatazxyz2323@test.com",
+ 	"password" : "12345678" 
+} ,
+	{
+		"firstname" : "Moataz",
+		"lastname" : "khalil" ,
+		"day" : "5",
+		"email" : "moataz4545y232z@test.com",
+		"password" : "12345678"
+	}
+
+]

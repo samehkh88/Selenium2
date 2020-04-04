@@ -1,0 +1,5 @@
+Pages\LoginPage.class
+Pages\UserRegisterPage.class
+Pages\HomePage.class
+Pages\Pagebase.class
+Pages\ContactUsPage.class

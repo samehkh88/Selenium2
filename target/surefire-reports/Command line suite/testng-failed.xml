@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="tests.UserRegisterationTestCase">
+        <methods>
+          <include name="StopDriver"/>
+          <include name="WaitAfterClass"/>
+          <include name="UserCanRegisterSuccessfully"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- tests.UserRegisterationTestCase -->
+      <class name="tests.ContactUsTestCase">
+        <methods>
+          <include name="UserCanContactUs"/>
+          <include name="StopDriver"/>
+          <include name="WaitAfterClass"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- tests.ContactUsTestCase -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

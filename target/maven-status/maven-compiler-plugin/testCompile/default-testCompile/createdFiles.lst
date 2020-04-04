@@ -1,0 +1,5 @@
+tests\UserRegisterationTestCase.class
+tests\UserLoginTestCase.class
+tests\EmailPage.class
+tests\ContactUsTestCase.class
+tests\TestBase.class
