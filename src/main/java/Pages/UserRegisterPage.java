@@ -47,9 +47,9 @@ public class UserRegisterPage extends Pagebase {
         ClickButtons(MaLeGender);
         SendValue(FirstName , fname);
         SendValue(LastName , Lname);
-        select(DayofBirth, Integer.parseInt(day));
-        select(MonthofBirth, Integer.parseInt(month));
-        select(YearOfBirth, Integer.parseInt(year));
+        select(DayofBirth, ((int) Double.parseDouble(day)));
+        select(MonthofBirth, ((int) Double.parseDouble(month)));
+        select(YearOfBirth, ((int) Double.parseDouble(year)));
         SendValue(Email , email);
         SendValue(Password , pass);
         SendValue(ConfirmPassword , pass);

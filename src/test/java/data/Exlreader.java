@@ -30,7 +30,7 @@ public class Exlreader {
 
 	}
 
-	public Object[][] GetExlData (int sheetNum , int TotalColum) throws IOException
+	public Object[][] GetExlData (int sheetNum , int TotalColume) throws IOException
 	{
 		fis = getfileinputstream();
 		XSSFWorkbook workbook = null;
@@ -41,15 +41,15 @@ public class Exlreader {
 		}
 		XSSFSheet sheet = workbook.getSheetAt(sheetNum);
 		int totalNumberOfrows = (sheet.getLastRowNum()+1);
-		int totalNumberOfCoulems = TotalColum ;
+		int totalNumberOfCoulems = TotalColume ;
 		String [][] arrayExlData = new String[totalNumberOfrows][totalNumberOfCoulems];
 		for (int i = 0; i < totalNumberOfrows; i++) 
 		{
 			for (int j = 0; j < totalNumberOfCoulems; j++) {
 				XSSFRow row = sheet.getRow(i);
-			//	arrayExlData[i][j] = String.valueOf(row.getCell(j).toString());
-				
-
+				arrayExlData[i][j] = (row.getCell(j).toString());
+				System.out.println(row.getCell(j).toString());
+/*
 				try {
 
 					//arrayExlData[i][j] = String.valueOf(row.getCell(j).getCellType());
@@ -72,7 +72,7 @@ public class Exlreader {
 					System.out.println("the error message is : " + E);
 				}
 
-
+*/
 			}
 
 
